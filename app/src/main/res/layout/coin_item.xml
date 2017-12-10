@@ -58,7 +58,7 @@
 
 
         <LinearLayout
-            android:id="@+id/ll_1Hour"
+            android:id="@+id/ll_1Day"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -72,7 +72,7 @@
             <com.base.baseproject.viewhelper.widget.AppTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1h"
+                android:text="7d"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/iv_image"
@@ -87,7 +87,7 @@
                 />
 
             <com.base.baseproject.viewhelper.widget.AppTextView
-                android:id="@+id/tv_1hPercent"
+                android:id="@+id/tv_7dPercent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+2.265 %"
@@ -96,7 +96,7 @@
                 app:layout_constraintTop_toBottomOf="@id/iv_image"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:tv_font="@string/roboto_bold"
-                android:textColor="@color/green"
+                android:textColor="@color/red"
                 android:textSize="14sp"
                 android:maxLines="1"
                 android:lines="1"
@@ -112,9 +112,9 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="bottom|center"
-            app:layout_constraintLeft_toRightOf="@id/ll_1Hour"
-            app:layout_constraintRight_toLeftOf="@id/ll_1Day"
-            app:layout_constraintTop_toTopOf="@id/ll_1Hour"
+            app:layout_constraintRight_toLeftOf="@id/ll_1Hour"
+            app:layout_constraintLeft_toRightOf="@id/ll_1Day"
+            app:layout_constraintTop_toTopOf="@id/ll_1Day"
             app:layout_constraintBottom_toBottomOf="parent"
             >
             <com.base.baseproject.viewhelper.widget.AppTextView
@@ -155,7 +155,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/ll_1Day"
+            android:id="@+id/ll_1Hour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -168,7 +168,7 @@
             <com.base.baseproject.viewhelper.widget.AppTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7d"
+                android:text="1h"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/iv_image"
@@ -183,7 +183,7 @@
                 />
 
             <com.base.baseproject.viewhelper.widget.AppTextView
-                android:id="@+id/tv_7dPercent"
+                android:id="@+id/tv_1hPercent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+2.265 %"
@@ -192,7 +192,7 @@
                 app:layout_constraintTop_toBottomOf="@id/iv_image"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:tv_font="@string/roboto_bold"
-                android:textColor="@color/red"
+                android:textColor="@color/green"
                 android:textSize="14sp"
                 android:maxLines="1"
                 android:lines="1"
