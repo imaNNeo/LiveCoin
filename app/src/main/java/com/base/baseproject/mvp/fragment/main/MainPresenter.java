@@ -36,10 +36,10 @@ public class MainPresenter extends LoadingMvpPresenter<MainView> {
     public void onAttach(MainView view) {
         super.onAttach(view);
 
-        start();
+        loadCoins();
     }
 
-    private void start() {
+    private void loadCoins() {
         getCoinItemsFields = new RequestObjects.GetCoinItemsFields(20);
         callGetCoins();
     }
@@ -73,6 +73,14 @@ public class MainPresenter extends LoadingMvpPresenter<MainView> {
 
     @Override
     protected void onRetryClicked(int rqCode) {
+        switch (rqCode){
+            case RQ_GET_COIN_ITEMS :
+                callGetCoins();
+                break;
+        }
+    }
 
+    public void onRefreshed() {
+        loadCoins();
     }
 }

@@ -4,16 +4,25 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-    <com.base.baseproject.viewhelper.widget.AppRecyclerView
-        android:id="@+id/rv_content"
+    <com.base.baseproject.viewhelper.widget.AppSwipeRefreshLayout
+        android:id="@+id/srl_container"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@color/button_blue"
-        />
+        >
+
+        <com.base.baseproject.viewhelper.widget.AppRecyclerView
+            android:id="@+id/rv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/size1x"
+            android:clipToPadding="false"
+            />
+
+    </com.base.baseproject.viewhelper.widget.AppSwipeRefreshLayout>
+
 
 </android.support.constraint.ConstraintLayout>
