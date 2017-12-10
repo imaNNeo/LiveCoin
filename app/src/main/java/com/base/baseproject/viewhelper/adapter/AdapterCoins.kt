@@ -11,6 +11,8 @@ import com.base.baseproject.data.api.retrofit.models.ResponseObjects
 import com.base.baseproject.utils.ImageHandler
 import com.base.baseproject.viewhelper.widget.AppImageView
 import com.base.baseproject.viewhelper.widget.AppTextView
+import java.text.NumberFormat
+import java.util.*
 
 /**
  * Created by iman.
@@ -21,6 +23,9 @@ class AdapterCoins : BaseRecyclerAdapter<AdapterCoins.ViewHolderCoin, ResponseOb
     lateinit var mContext : Context
     private var redColor : Int = 0
     private var greenColor : Int = 0
+
+    private val currencyFormatter = NumberFormat.getCurrencyInstance(Locale.US)
+
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): ViewHolderCoin {
         mContext = parent!!.context
         val view = LayoutInflater.from(mContext).inflate(R.layout.coin_item,parent,false)
@@ -35,7 +40,7 @@ class AdapterCoins : BaseRecyclerAdapter<AdapterCoins.ViewHolderCoin, ResponseOb
         val coin = getItem(position)
         ImageHandler.getmInstance(mContext).loadResImage(R.drawable.bitcoin,holder?.ivImage)
         holder?.tvName?.text = "${coin.name} (${coin.symbol})"
-        holder?.tvPrice?.text = "${coin.price_usd} $"
+        holder?.tvPrice?.text = "${currencyFormatter.format(coin.price_usd)}"
 
         holder?.tv1HPercent?.text = "${coin.percent_change_1h} %"
         holder?.tv1HPercent?.setTextColor(if (coin.percent_change_1h>=0) greenColor else redColor)

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import com.base.baseproject.R;
 import com.base.baseproject.di.annotation.ActivityQualifier;
@@ -51,6 +52,18 @@ public class MainActivity extends BaseActivity implements MainView {
         mFragsHandler.setFragsContainerResId(R.id.fl_container);
         mFragsHandler.openMainFragment();
 
+        init();
+
+    }
+
+    private void init() {
+        initToolbar();
+    }
+
+    private void initToolbar() {
+        mToolbarHolder.init(this);
+        mToolbarHolder.ivBack.setVisibility(View.GONE);
+        mToolbarHolder.tvTitle.setText(getString(R.string.app_name));
     }
 
     @Override
