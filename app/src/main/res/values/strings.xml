@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">BaseProject</string>
+    <string name="app_normalized_name">fast_fix</string>
+
+    // PUBLIC Messages
+    <string name="dialog_no_gps">No GPS</string>
+    <string name="dialog_no_gps_message">Seems like you have not started your location service.</string>
+    <string name="dialog_enable_gps">Enable GPS</string>
+    <string name="dialog_exit">Exit</string>
+    <string name="dialog_no_internet">No Internet</string>
+    <string name="dialog_no_inter_message">Internet connection error!</string>
+    <string name="dialog_enable_data">Enable cellular Data</string>
+    <string name="dialog_enable_wifi">Enable WIFI</string>
+    <string name="aus">Are you sure?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    //Share APP
+    <string name="text_share_app">Share app!</string>
+    <string name="txt_share_app1">Fast Fix is Great!Please try it…</string>
+    <string name="txt_share_app2">Install FastFix right now!</string>
+    <string name="txt_app">FastFix App!</string>
+
+    //LogOut
+    <string name="logout_confirm_title">Log out from application</string>
+    <string name="back_slash"> / </string>
+
+
+    <string name="email_is_not_valid">Email is not valid</string>
+    <string name="password_short">Password is short</string>
+    <string name="password_not_match">Password Not match</string>
+
+
+    <!--Month-->
+    <string name="month_1">Jan</string>
+    <string name="month_2">Feb</string>
+    <string name="month_3">Mar</string>
+    <string name="month_4">Apr</string>
+    <string name="month_5">May</string>
+    <string name="month_6">Jun</string>
+    <string name="month_7">Jul</string>
+    <string name="month_8">Aug</string>
+    <string name="month_9">Sep</string>
+    <string name="month_10">Oct</string>
+    <string name="month_11">Nov</string>
+    <string name="month_12">Dec</string>
+    <!--Month-->
+
+
+    <!--Week days-->
+    <string name="saturday">Sat</string>
+    <string name="sunday">Sun</string>
+    <string name="monday">Mon</string>
+    <string name="tuesday">Tue</string>
+    <string name="wednesday">Wed</string>
+    <string name="thursday">Thu</string>
+    <string name="friday">Fri</string>
+    <!--Week days-->
+
+    <string name="error_network_connection_error">Please Check Your internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="dummy_large">asdfasdfasdfasdfkkkkkhjkasdfasdlkafsldfkalsdfhj/asdfkjkhasdjkfhasdfkjhasdkjfhasdlkf/sjhdfgskdfhgdbjkhsdf/kfgbjk</string>
+
+
+    <string name="internet_problem">Internet Problem</string>
+    <string name="internet_problem_hint">Please check your internet connection and try again</string>
+    <string name="system_error">System error</string>
+    <string name="system_error_hint">Oh Sorry , We have an error\nplease try again later</string>
+    <string name="try_again">Try Again</string>
+
+
+</resources>

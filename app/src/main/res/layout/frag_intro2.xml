@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_botTexts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.base.baseproject.viewhelper.widget.AppImageView
+            android:id="@+id/iv_coin"
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            app:srcCompat="@drawable/man"
+            android:layout_marginBottom="40dp"
+            android:scaleType="centerCrop"
+            />
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test Test Test Test Test Test Test Test Test Test Test Test Test "
+            android:textColor="#eaeaea"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/size2x"
+            android:layout_marginRight="@dimen/size2x"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

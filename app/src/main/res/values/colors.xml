@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="snack_action_color">#e3f426</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="error_red">#f54141</color>
+
+    <!--Drawer-->
+    <color name="drawer_items_text">#ffffff</color>
+    <!--Drawer-->
+
+
+    <!--AppButton-->
+    <color name="button_white">#fff</color>
+    <color name="button_black">#000</color>
+    <color name="button_gray">#6c6c6c</color>
+    <color name="button_orange">#ce4b0e</color>
+    <color name="button_blue">#00f</color>
+    <!--AppButton-->
+
+    <!--Intro-->
+    <color name="intro_bg_color1">@color/white</color>
+    <color name="intro_bg_color2">#3b4747</color>
+    <color name="intro_bg_color3">@color/white</color>
+    <!--Intro-->
+
+
+
+    <color name="dark_40">#66181718</color>
+    <color name="dark_40_0">#00181718</color>
+
+    <color name="dark_20">#33181718</color>
+    <color name="dark_20_0">#00181718</color>
+
+</resources>

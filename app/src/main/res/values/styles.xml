@@ -1,0 +1,54 @@
+<resources>
+
+    <style name="MyMaterialTheme.TransparentStatus" parent="MyMaterialTheme">
+
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Splash">
+        <item name="android:windowBackground">@drawable/onboarding_activity_splash</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowSoftInputMode">stateHidden</item>
+    </style>
+
+
+
+    <style name="AppProgressStyleWhite" parent="@style/Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">#ffffff</item>
+        <item name="cpd_strokeSize">3dp</item>
+        <item name="cpd_padding">4dp</item>
+    </style>
+
+
+    <style name="AppProgressStylePrimary" parent="@style/Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/colorPrimary</item>
+        <item name="cpd_strokeSize">3dp</item>
+        <item name="cpd_padding">4dp</item>
+    </style>
+
+    <style name="AppProgressStyleAccent" parent="@style/Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/colorAccent</item>
+        <item name="cpd_strokeSize">3dp</item>
+        <item name="cpd_padding">4dp</item>
+    </style>
+
+
+    <style name="PrimaryFlatButton" parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">
+            @style/Widget.AppCompat.Button.Borderless.Colored
+        </item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <!--
+    Programmer Iman Khoshabi
+    iman.neofight@gmail.com
+    -->
+
+    <!-- FONTS -->
+    <string name="font_default">@string/roboto_regular</string>
+    <string name="roboto_bold">Roboto-Bold.ttf</string>
+    <string name="roboto_regular">roboto_regular.ttf</string>
+    <!-- FONTS -->
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_offset">16dp</dimen>
+
+
+    <!--Drawer-->
+    <dimen name="drawer_width">280dp</dimen>
+    <dimen name="drawer_header_height">186dp</dimen>
+    <dimen name="drawer_items_height">@dimen/size7x</dimen>
+    <dimen name="drawer_items_icon_size">@dimen/size3x</dimen>
+    <dimen name="drawer_items_icon_margin">@dimen/size2x</dimen>
+    <dimen name="drawer_items_text_size">14sp</dimen>
+    <!--Drawer-->
+
+    <!--Dialog-->
+    <dimen name="dialog_mar_left_right">26dp</dimen>
+    <dimen name="dialog_title_size">18sp</dimen>
+    <dimen name="dialog_bot_button_mar_top_bot">18dp</dimen>
+    <dimen name="app_dialog_fields_height">40dp</dimen>
+    <!--Dialog-->
+
+
+    <!--PagesLoading-->
+    <dimen name="pl_size">100dp</dimen>
+    <dimen name="pl_progressSize">38dp</dimen>
+    <!--PagesLoading-->
+
+    <!--PagesInternetError-->
+    <dimen name="pie_width">260dp</dimen>
+    <dimen name="pie_image_size">42dp</dimen>
+    <!--PagesInternetError-->
+
+    <dimen name="size0.25x">2dp</dimen>
+    <dimen name="size0.5x">4dp</dimen>
+    <dimen name="size1x">8dp</dimen>
+    <dimen name="size1.5x">12dp</dimen>
+    <dimen name="size2x">16dp</dimen>
+    <dimen name="size2.5x">20dp</dimen>
+    <dimen name="size3x">24dp</dimen>
+    <dimen name="size3.5x">28dp</dimen>
+    <dimen name="size4x">32dp</dimen>
+    <dimen name="size4.5x">36dp</dimen>
+    <dimen name="size5x">40dp</dimen>
+    <dimen name="size5.5x">44dp</dimen>
+    <dimen name="size6x">48dp</dimen>
+    <dimen name="size6.5x">52dp</dimen>
+    <dimen name="size7x">56dp</dimen>
+    <dimen name="size8x">64dp</dimen>
+    <dimen name="size9x">72dp</dimen>
+    <dimen name="size10x">80dp</dimen>
+    <dimen name="size11x">88dp</dimen>
+    <dimen name="size12x">96dp</dimen>
+    <dimen name="size13x">104dp</dimen>
+    <dimen name="size14x">112dp</dimen>
+    <dimen name="size15x">120dp</dimen>
+    <dimen name="size16x">128dp</dimen>
+    <dimen name="size17x">136dp</dimen>
+    <dimen name="size18x">144dp</dimen>
+    <dimen name="size19x">152dp</dimen>
+    <dimen name="size20x">160dp</dimen>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.base.baseproject.viewhelper.widget.AppCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    >
+
+    <RelativeLayout
+        android:id="@+id/activity_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="ir.neo.baseproj.ActivitySplash">
+
+        <com.base.baseproject.viewhelper.widget.AppImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/splash_bg"
+            />
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Splash"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            />
+
+
+
+
+        <com.base.baseproject.viewhelper.widget.AppProgressView
+            android:id="@+id/pv_loading"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            app:pv_progressStyle="@style/AppProgressStyleWhite"
+            app:pv_progressMode="indeterminate"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:visibility="invisible"
+            />
+
+    </RelativeLayout>
+
+</com.base.baseproject.viewhelper.widget.AppCoordinatorLayout>

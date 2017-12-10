@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    >
+
+    <com.base.baseproject.viewhelper.widget.AppNestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/drawer_header_height"
+        android:background="#484848"
+        >
+        <!-- DrawerWidth = 280 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drawer_items_height"
+                android:background="?attr/selectableItemBackground"
+                >
+
+                <com.base.baseproject.viewhelper.widget.AppImageView
+                    android:id="@+id/iv_login"
+                    android:layout_width="@dimen/drawer_items_icon_size"
+                    android:layout_height="@dimen/drawer_items_icon_size"
+                    app:srcCompat="@drawable/ic_check_white"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/drawer_items_icon_margin"
+                    />
+
+                <com.base.baseproject.viewhelper.widget.AppTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:layout_toRightOf="@id/iv_login"
+                    android:layout_centerVertical="true"
+                    android:text="Login"
+                    android:textSize="@dimen/drawer_items_text_size"
+                    android:textColor="@color/drawer_items_text"
+                    app:tv_font="@string/roboto_regular"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </com.base.baseproject.viewhelper.widget.AppNestedScrollView>
+</RelativeLayout>

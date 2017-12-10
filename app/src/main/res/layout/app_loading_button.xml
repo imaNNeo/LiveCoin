@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.base.baseproject.viewhelper.widget.AppConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.base.baseproject.viewhelper.widget.AppTextView
+        android:id="@+id/tv_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Button"
+        android:gravity="center"
+        />
+
+    <com.base.baseproject.viewhelper.widget.AppProgressView
+        android:id="@+id/pv_btnLoading"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressStyle="@style/AppProgressStylePrimary"
+        app:pv_progressMode="indeterminate"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        />
+
+</com.base.baseproject.viewhelper.widget.AppConstraintLayout>

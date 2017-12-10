@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_container"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_botTexts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.base.baseproject.viewhelper.widget.AppImageView
+            android:id="@+id/iv_melon"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/man"
+            android:layout_marginBottom="40dp"
+            android:adjustViewBounds="true"
+            />
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Step Last Step Last Step Last Step Last Step Last Step Last Step "
+            android:textColor="#fb425c"
+            android:textSize="20sp"
+            android:gravity="center"
+            app:tv_font="@string/roboto_bold"
+            android:layout_marginLeft="@dimen/size2x"
+            android:layout_marginRight="@dimen/size2x"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

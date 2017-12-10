@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.base.baseproject.viewhelper.widget.AppConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_footer"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:background="#2e3839"
+            >
+
+            <com.base.baseproject.viewhelper.widget.AppTextView
+                android:id="@+id/tv_footerSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="SKIP"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_alignParentLeft="true"
+                android:background="?selectableItemBackgroundBorderless"
+                />
+
+
+            <com.base.baseproject.viewhelper.widget.AppImageView
+                android:id="@+id/iv_footerNext"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_arrow_back_white"
+                android:rotation="180"
+                android:padding="18dp"
+                android:background="?selectableItemBackgroundBorderless"
+                />
+
+        </RelativeLayout>
+
+        <com.base.baseproject.viewhelper.widget.AppViewPager
+            android:id="@+id/vp_intro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rl_footer"
+            />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@drawable/drop_shadow_dark_40_top"
+            android:layout_above="@id/rl_footer"
+            />
+
+    </RelativeLayout>
+
+</com.base.baseproject.viewhelper.widget.AppConstraintLayout>

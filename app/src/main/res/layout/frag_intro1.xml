@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_container"
+    >
+
+
+
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"
+            android:textColor="#fb425c"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"
+            android:layout_above="@+id/iv_melon"
+            android:layout_centerHorizontal="true"
+            app:tv_font="@string/roboto_bold"
+            />
+
+        <com.base.baseproject.viewhelper.widget.AppImageView
+            android:id="@+id/iv_melon"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/man"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_centerInParent="true"
+            />
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Welcome Welcome Welcome Welcome Welcome Welcome "
+            android:textColor="#575f60"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/size2x"
+            android:layout_marginRight="@dimen/size2x"
+            android:layout_below="@id/iv_melon"
+            android:layout_centerHorizontal="true"
+            />
+
+
+</RelativeLayout>

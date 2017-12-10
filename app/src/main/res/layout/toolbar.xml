@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        >
+
+        <!--Right Side-->
+        <LinearLayout
+            android:id="@+id/ll_right"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            >
+
+            <com.base.baseproject.viewhelper.widget.AppImageView
+                android:id="@+id/iv_submit"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                app:srcCompat="@drawable/ic_check_white"
+                android:padding="@dimen/size2x"
+                android:background="?selectableItemBackgroundBorderless"
+                android:visibility="gone"
+                />
+
+
+        </LinearLayout>
+
+        <!--Left Side-->
+        <LinearLayout
+            android:id="@+id/ll_left"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal"
+            >
+
+            <com.base.baseproject.viewhelper.widget.AppImageView
+                android:id="@+id/iv_menu"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                app:srcCompat="@drawable/ic_menu_white"
+                android:padding="@dimen/size2x"
+                android:background="?selectableItemBackgroundBorderless"
+                android:visibility="gone"
+                />
+
+            <com.base.baseproject.viewhelper.widget.AppImageView
+                android:id="@+id/iv_back"
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                app:srcCompat="@drawable/ic_arrow_back_white"
+                android:padding="@dimen/size2x"
+                android:background="?selectableItemBackgroundBorderless"
+                />
+
+        </LinearLayout>
+
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size2.5x"
+            android:layout_marginRight="@dimen/size1x"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="left|center_vertical"
+            android:layout_toRightOf="@id/ll_left"
+            android:layout_toLeftOf="@id/ll_right"
+            android:lines="1"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

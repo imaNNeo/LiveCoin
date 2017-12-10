@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <com.base.baseproject.viewhelper.widget.AppConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dialog_title_size"
+            android:textColor="#2b2b2b"
+            android:gravity="center_horizontal"
+            android:text="Edit User Info"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/size3.5x"
+            />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintBottom_toTopOf="@+id/ll_buttons"
+            android:paddingLeft="@dimen/dialog_mar_left_right"
+            android:paddingRight="@dimen/dialog_mar_left_right"
+            android:clipToPadding="false"
+            android:layout_marginBottom="@dimen/dialog_bot_button_mar_top_bot"
+            android:layout_marginTop="@dimen/dialog_bot_button_mar_top_bot"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <com.base.baseproject.viewhelper.widget.AppTextView
+                        android:id="@+id/tv_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_large"
+                        android:textSize="20sp"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/dialog_mar_left_right"
+            android:layout_marginRight="@dimen/dialog_mar_left_right"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_positive"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/app_dialog_fields_height"
+                android:background="@drawable/round_bg_gray"
+                android:layout_marginBottom="@dimen/dialog_bot_button_mar_top_bot"
+                app:layout_constraintHorizontal_bias="0.45"
+                android:foreground="?selectableItemBackground"
+                >
+
+                <com.base.baseproject.viewhelper.widget.AppTextView
+                    android:id="@+id/tv_positiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="16.7sp"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.base.baseproject.viewhelper.widget.AppConstraintLayout>
+
+</RelativeLayout>
