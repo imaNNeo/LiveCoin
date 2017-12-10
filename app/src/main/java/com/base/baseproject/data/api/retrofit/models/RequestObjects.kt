@@ -10,19 +10,6 @@ class RequestObjects {
         var password: String? = null
     }
 
-    data class Crypto(val id : String,
-                      val name  : String,
-                      val symbol : String,
-                      val rank : Int,
-                      val price_usd : Float,
-                      val price_btc : Float,
-                      val market_cap_usd : Float,
-                      val available_supply : Float,
-                      val total_supply : Float,
-                      val max_supply : Float,
-                      val percent_change_1h : Float,
-                      val percent_change_24h : Float,
-                      val percent_change_7d : Float,
-                      val last_updated : Long
-    )
+    data class GetCoinItemsFields(val limit : Int)
+
 }

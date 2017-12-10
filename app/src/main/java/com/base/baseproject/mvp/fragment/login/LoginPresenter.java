@@ -80,12 +80,12 @@ public class LoginPresenter extends LoadingMvpPresenter<LoginView> {
                         super.onSuccess(loginResponseResult);
                         getMvpView().hideLoading();
 
-                        if(loginResponseResult.success){
+                        if(loginResponseResult.getSuccess()){
                             getMvpView().gotoMain();
                             getMvpView().closeEntranceActivities();
                             mUserHelper.onLogin(loginFields,loginResponseResult);
                         }else{
-                            getMvpView().showServerMessage(loginResponseResult.message);
+                            getMvpView().showServerMessage(loginResponseResult.getMessage());
                         }
                     }
 

@@ -6,6 +6,7 @@ import com.base.baseproject.data.db.room.entity.SampleItemEntity;
 import com.base.baseproject.utils.AppConstants;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import io.reactivex.Single;
 
@@ -34,6 +35,9 @@ public class RetrofitApiHandler {
     }
     public Single<ArrayList<SampleItemEntity>> getSampleList(String token){
         return appClient.getSampleItems(token);
+    }
+    public Single<List<ResponseObjects.CoinItem>> getCoinItems(RequestObjects.GetCoinItemsFields fields){
+        return appClient.getCoinItems(fields.getLimit());
     }
 
 }

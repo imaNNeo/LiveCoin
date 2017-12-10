@@ -5,6 +5,8 @@ import com.base.baseproject.data.api.retrofit.models.ResponseObjects;
 import com.base.baseproject.data.db.room.entity.SampleItemEntity;
 
 import java.util.ArrayList;
+import java.util.List;
+
 import io.reactivex.Single;
 
 /**
@@ -14,4 +16,5 @@ import io.reactivex.Single;
 public abstract class ApiHelper {
     public abstract Single<ResponseObjects.LoginResponse> login(RequestObjects.LoginFields fields);
     public abstract Single<ArrayList<SampleItemEntity>> getSampleList();
+    public abstract Single<List<ResponseObjects.CoinItem>> getCoinItems(RequestObjects.GetCoinItemsFields fields);
 }

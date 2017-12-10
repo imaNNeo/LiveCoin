@@ -87,7 +87,7 @@ public abstract class LoadingMvpPresenter<V extends LoadingMvpView> extends Base
                 getMvpView().showSystemError(null,errorRetryListener);
             }
             if(errorAnswer!=null)
-                getMvpView().showSystemError(errorAnswer.error + "\n" + errorAnswer.error_description,errorRetryListener);
+                getMvpView().showSystemError(errorAnswer.getError() + "\n" + errorAnswer.getError_description(),errorRetryListener);
             return ECT_SYSTEM;
         }else if(NetWorkHandler.isNetworkThrowable(t)){
             getMvpView().showInternetRetry(internetRetryListener);

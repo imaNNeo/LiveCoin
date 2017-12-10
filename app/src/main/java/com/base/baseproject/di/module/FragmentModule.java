@@ -48,7 +48,7 @@ public class FragmentModule {
 
     @Provides
     @PerFragment
-    MainPresenter provideMainPresenter(){
-        return new MainPresenter();
+    MainPresenter provideMainPresenter(ApiHelper apiHelper, UserHelper userHelper, SchedulerProvider schedulerProvider){
+        return new MainPresenter(apiHelper,userHelper,schedulerProvider);
     }
 }

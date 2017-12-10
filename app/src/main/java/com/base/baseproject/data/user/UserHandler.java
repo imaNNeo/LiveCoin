@@ -21,7 +21,7 @@ public class UserHandler{
                         ResponseObjects.LoginResponse response){
         mPrefHelpter.set(PrefHandler.KEY_USER_USERNAME, fields.getUsername());
         mPrefHelpter.set(PrefHandler.KEY_USER_PASSWORD, fields.getPassword());
-        mPrefHelpter.set(PrefHandler.KEY_USER_ACCESS_TOKEN,response.token);
+        mPrefHelpter.set(PrefHandler.KEY_USER_ACCESS_TOKEN, response.getToken());
     }
     public boolean isLogin(){
         return !TextUtils.isEmpty(getToken());

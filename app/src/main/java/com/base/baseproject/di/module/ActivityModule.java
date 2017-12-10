@@ -15,6 +15,7 @@ import com.base.baseproject.mvp.activity.main.MainPresenter;
 import com.base.baseproject.mvp.activity.splash.SplashPresenter;
 import com.base.baseproject.mvp.base.BaseActivity;
 import com.base.baseproject.mvp.fragment.FragmentsHandler;
+import com.base.baseproject.viewhelper.adapter.AdapterCoins;
 import com.base.baseproject.viewhelper.adapter.AdapterSampleItems;
 import com.base.baseproject.viewhelper.adapter.AdapterStringList;
 import com.base.baseproject.viewhelper.adapter.pager.AdapterFragPagerIntro;
@@ -79,6 +80,10 @@ public class ActivityModule {
         return new AdapterStringList(mActivity);
     }
 
+    @Provides
+    AdapterCoins provideAdapterCoins(){
+        return new AdapterCoins();
+    }
 
     @Provides
     AdapterFragPagerIntro provideAdapterFragPagerIntro(@ActivityContext Context ctx){

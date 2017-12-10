@@ -14,6 +14,7 @@ import com.base.baseproject.mvp.activity.intro.IntroActivity;
 import com.base.baseproject.mvp.activity.main.MainActivity;
 import com.base.baseproject.mvp.activity.splash.SplashActivity;
 import com.base.baseproject.rx.SchedulerProvider;
+import com.base.baseproject.viewhelper.adapter.AdapterCoins;
 import com.base.baseproject.viewhelper.dialog.DialogSelectItem;
 
 import dagger.Component;
@@ -38,6 +39,7 @@ public interface ActivityComponent {
     ApiHelper apiHelper();
     DbHelper dbHelper();
     SchedulerProvider schedulerProvider();
+    AdapterCoins adapterCoins();
 
     @ActivityContext
     Context getActivityContext();

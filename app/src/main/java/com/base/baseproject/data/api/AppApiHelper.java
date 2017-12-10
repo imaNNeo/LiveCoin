@@ -9,6 +9,7 @@ import com.base.baseproject.data.db.room.entity.SampleItemEntity;
 import com.base.baseproject.data.user.UserHandler;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import io.reactivex.Single;
 import io.reactivex.SingleObserver;
@@ -39,6 +40,11 @@ public class AppApiHelper extends ApiHelper {
     public Single<ArrayList<SampleItemEntity>> getSampleList() {
         String token = mUserHandler.getToken();
         return RetrofitApiHandler.getInstance().getSampleList(token);
+    }
+
+    @Override
+    public Single<List<ResponseObjects.CoinItem>> getCoinItems(RequestObjects.GetCoinItemsFields fields) {
+        return RetrofitApiHandler.getInstance().getCoinItems(fields);
     }
 
 
