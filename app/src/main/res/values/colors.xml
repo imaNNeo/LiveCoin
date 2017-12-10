@@ -10,6 +10,8 @@
     <color name="black">#000</color>
 
     <color name="error_red">#f54141</color>
+    <color name="green">#0f0</color>
+    <color name="red">#f00</color>
 
     <!--Drawer-->
     <color name="drawer_items_text">#ffffff</color>

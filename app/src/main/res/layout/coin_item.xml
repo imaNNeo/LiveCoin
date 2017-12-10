@@ -1,8 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.base.baseproject.viewhelper.widget.AppCardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="60dp"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardBackgroundColor="#0f0">
+    app:cardCornerRadius="2dp"
+    app:cardBackgroundColor="@color/white"
+    >
+
+    <com.base.baseproject.viewhelper.widget.AppConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size1x"
+        >
+
+        <com.base.baseproject.viewhelper.widget.AppImageView
+            android:id="@+id/iv_image"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/size1x"
+            app:srcCompat="@drawable/bitcoin"
+            />
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitcoin (BTC)"
+            app:layout_constraintLeft_toRightOf="@id/iv_image"
+            app:layout_constraintTop_toTopOf="@id/iv_image"
+            app:layout_constraintBottom_toBottomOf="@id/iv_image"
+            android:layout_marginLeft="@dimen/size1x"
+            app:tv_font="@string/roboto_bold"
+            android:textColor="@color/black"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            />
+
+
+        <com.base.baseproject.viewhelper.widget.AppTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="120$"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_image"
+            app:tv_font="@string/roboto_regular"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:maxLines="1"
+            android:lines="1"
+            android:singleLine="true"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/ll_1Hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom|center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_price"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/ll_24Hour"
+            android:layout_marginTop="@dimen/size1.5x"
+            >
+            <com.base.baseproject.viewhelper.widget.AppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1h"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tv_font="@string/roboto_bold"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/size1x"
+                />
+
+            <com.base.baseproject.viewhelper.widget.AppTextView
+                android:id="@+id/tv_1hPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2.265 %"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tv_font="@string/roboto_bold"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/size1x"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_24Hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom|center"
+            app:layout_constraintLeft_toRightOf="@id/ll_1Hour"
+            app:layout_constraintRight_toLeftOf="@id/ll_1Day"
+            app:layout_constraintTop_toTopOf="@id/ll_1Hour"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <com.base.baseproject.viewhelper.widget.AppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24h"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tv_font="@string/roboto_bold"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/size1x"
+                />
+
+            <com.base.baseproject.viewhelper.widget.AppTextView
+                android:id="@+id/tv_24hPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2.265 %"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tv_font="@string/roboto_bold"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/size1x"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_1Day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom|center"
+            app:layout_constraintLeft_toRightOf="@id/ll_24Hour"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ll_24Hour"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <com.base.baseproject.viewhelper.widget.AppTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7d"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tv_font="@string/roboto_bold"
+                android:textColor="@color/black"
+                android:textSize="8sp"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/size1x"
+                />
+
+            <com.base.baseproject.viewhelper.widget.AppTextView
+                android:id="@+id/tv_7dPercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+2.265 %"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_image"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:tv_font="@string/roboto_bold"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:lines="1"
+                android:singleLine="true"
+                android:layout_marginRight="@dimen/size1x"
+                />
+
+        </LinearLayout>
+
+    </com.base.baseproject.viewhelper.widget.AppConstraintLayout>
 
 </com.base.baseproject.viewhelper.widget.AppCardView>
