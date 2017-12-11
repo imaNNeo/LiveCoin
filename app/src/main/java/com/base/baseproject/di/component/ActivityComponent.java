@@ -9,8 +9,6 @@ import com.base.baseproject.data.user.UserHelper;
 import com.base.baseproject.di.annotation.ActivityContext;
 import com.base.baseproject.di.annotation.PerActivity;
 import com.base.baseproject.di.module.ActivityModule;
-import com.base.baseproject.mvp.activity.enter.EnterActivity;
-import com.base.baseproject.mvp.activity.intro.IntroActivity;
 import com.base.baseproject.mvp.activity.main.MainActivity;
 import com.base.baseproject.mvp.activity.splash.SplashActivity;
 import com.base.baseproject.rx.SchedulerProvider;
@@ -28,10 +26,8 @@ import dagger.Component;
 @Component(dependencies = ApplicationComponent.class, modules = ActivityModule.class)
 public interface ActivityComponent {
     void inject(MainActivity activity);
-    void inject(EnterActivity activity);
     void inject(SplashActivity activity);
     void inject(DialogSelectItem fragment);
-    void inject(IntroActivity introActivity);
 
 
     UserHelper userHelper();

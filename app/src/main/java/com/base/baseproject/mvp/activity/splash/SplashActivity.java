@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.base.baseproject.R;
-import com.base.baseproject.mvp.activity.enter.EnterActivity;
-import com.base.baseproject.mvp.activity.intro.IntroActivity;
 import com.base.baseproject.mvp.activity.main.MainActivity;
 import com.base.baseproject.mvp.base.BaseActivity;
 import com.base.baseproject.viewhelper.widget.AppProgressView;
@@ -129,13 +127,4 @@ public class SplashActivity extends BaseActivity implements SplashView{
         MainActivity.start(this);
     }
 
-    @Override
-    public void gotoEnter() {
-        EnterActivity.start(this);
-    }
-
-    @Override
-    public void gotoIntro() {
-        IntroActivity.start(this);
-    }
 }

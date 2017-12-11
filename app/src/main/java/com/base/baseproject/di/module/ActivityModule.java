@@ -9,8 +9,6 @@ import com.base.baseproject.data.user.UserHelper;
 import com.base.baseproject.di.annotation.ActivityContext;
 import com.base.baseproject.di.annotation.ActivityQualifier;
 import com.base.baseproject.di.annotation.PerActivity;
-import com.base.baseproject.mvp.activity.enter.EnterPresenter;
-import com.base.baseproject.mvp.activity.intro.IntroPresenter;
 import com.base.baseproject.mvp.activity.main.MainPresenter;
 import com.base.baseproject.mvp.activity.splash.SplashPresenter;
 import com.base.baseproject.mvp.base.BaseActivity;
@@ -45,12 +43,6 @@ public class ActivityModule {
     /*Presenters*/
     @Provides
     @PerActivity
-    EnterPresenter provideEnterPresenter(){
-        return new EnterPresenter();
-    }
-
-    @Provides
-    @PerActivity
     MainPresenter provideMainPresenter(){
         return new MainPresenter();
 }
@@ -60,13 +52,6 @@ public class ActivityModule {
     SplashPresenter provideSplashPresenter(UserHelper userHelper, PreferencesHelper preferencesHelper){
         return new SplashPresenter(userHelper,preferencesHelper);
     }
-
-    @Provides
-    @PerActivity
-    IntroPresenter provideIntroPresenter(PreferencesHelper preferencesHelper){
-        return new IntroPresenter(preferencesHelper);
-    }
-    /*Presenters*/
 
 
     /*Adapters*/

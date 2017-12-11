@@ -1,6 +1,5 @@
 package com.base.baseproject.utils;
 
-import com.base.baseproject.mvp.activity.enter.EnterActivity;
 import com.base.baseproject.mvp.activity.main.MainActivity;
 import com.base.baseproject.mvp.activity.splash.SplashActivity;
 import com.base.baseproject.mvp.base.BaseActivity;
@@ -20,14 +19,11 @@ public class ActivityHolder {
         return mActivityHolder;
     }
 
-    public WeakReference<EnterActivity> activityEnterWeakReference;
     public WeakReference<MainActivity> activityTestLoadingWeakReference;
     public WeakReference<SplashActivity> activitySplashWeakReference;
 
     public void addActivity(BaseActivity baseActivity){
-        if(baseActivity instanceof EnterActivity){
-            activityEnterWeakReference = new WeakReference<>((EnterActivity) baseActivity) ;
-        }else if(baseActivity instanceof MainActivity){
+        if(baseActivity instanceof MainActivity){
             activityTestLoadingWeakReference = new WeakReference<>((MainActivity) baseActivity) ;
         }else if(baseActivity instanceof SplashActivity){
             activitySplashWeakReference = new WeakReference<>((SplashActivity) baseActivity) ;
@@ -36,12 +32,10 @@ public class ActivityHolder {
 
 
     public void closeAllActivities() {
-        try {activityEnterWeakReference.get().finish();} catch (Exception e) {}
         try {activityTestLoadingWeakReference.get().finish();} catch (Exception e) {}
         try {activitySplashWeakReference.get().finish();} catch (Exception e) {}
     }
 
     public void closeEntranceActivities() {
-        try {activityEnterWeakReference.get().finish();} catch (Exception e) {}
     }
 }

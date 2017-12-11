@@ -31,20 +31,6 @@ public class SplashPresenter extends BaseMvpPresenter<SplashView> {
         if(!isViewAttached())return;
         getMvpView().closeYourself();
 
-        boolean isIntroPassed = false;
-        try {
-            isIntroPassed = Boolean.valueOf(mPreferencesHelper.get(PreferencesHelper.KEY_IS_INTRO_PASSED));
-        } catch (Exception e) {
-            isIntroPassed = false;
-        }
-
-        if(!isIntroPassed){
-            getMvpView().gotoIntro();
-        }else{
-            if(!mUserHelper.isLogin())
-                getMvpView().gotoEnter();
-            else
-                getMvpView().gotoMain();
-        }
+        getMvpView().gotoMain();
     }
 }

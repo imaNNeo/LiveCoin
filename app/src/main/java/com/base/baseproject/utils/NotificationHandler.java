@@ -9,7 +9,7 @@ import android.graphics.Color;
 import android.support.v4.app.NotificationCompat;
 
 import com.base.baseproject.R;
-import com.base.baseproject.mvp.activity.enter.EnterActivity;
+import com.base.baseproject.mvp.activity.main.MainActivity;
 
 import java.util.Random;
 
@@ -42,7 +42,7 @@ public class NotificationHandler {
         builder.setAutoCancel(true);
 
 
-        Intent i = new Intent(ctx, EnterActivity.class);
+        Intent i = new Intent(ctx, MainActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         PendingIntent contentIntent = PendingIntent.getActivity(ctx,0,i,0);
         builder.setContentIntent(contentIntent);

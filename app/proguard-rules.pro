@@ -132,3 +132,11 @@
 -dontwarn org.joda.time.**
 -dontwarn org.shaded.apache.commons.logging.impl.**
 -dontwarn com.google.firebase.**
+
+
+#OKHttp3
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class okhttp3.** { *; }
+-keep interface okhttp3.** { *; }
+-dontwarn okhttp3.**

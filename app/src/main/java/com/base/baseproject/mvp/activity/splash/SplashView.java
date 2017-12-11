@@ -12,6 +12,4 @@ public interface SplashView extends BaseMvpView{
     void hideLoading();
     void closeYourself();
     void gotoMain();
-    void gotoEnter();
-    void gotoIntro();
 }
